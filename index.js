@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import Media from './src/playlist/components/media';
 
 // console.log("Hola, mundo!")
 
 const $app = document.getElementById('app');
-const $holaMundo = <h1>Hola, mundo!!!</h1>;
+// const $holaMundo = <h1>Hola, mundo!!!</h1>;
 
-ReactDOM.render($holaMundo, $app);
+render(<Media />, $app);
