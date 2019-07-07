@@ -7,4 +7,4 @@ import Media from './src/playlist/components/media';
 const $app = document.getElementById('app');
 // const $holaMundo = <h1>Hola, mundo!!!</h1>;
 
-render(<Media />, $app);
+render(<Media title="¿Qué es responsive design?" author="Isaac Salcedo" image="./images/covers/responsive.jpg" />, $app);
