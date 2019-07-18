@@ -23,9 +23,9 @@ class Media extends Component {
       <div className="Media" onClick={this.handleClick}>
         <div className="Media-cover">
           <img
-            src={this.props.image}
+            src={this.props.cover}
             alt=""
-            width={260}
+            width={240}
             height={160}
           />
           <h3 className="Media-title">{this.props.title}</h3>
@@ -37,7 +37,7 @@ class Media extends Component {
 }
 
 Media.propTypes = {
-  image: PropTypes.string,
+  cover: PropTypes.string,
   title: PropTypes.string.isRequired,
   author: PropTypes.string,
   type: PropTypes.oneOf(['video', 'audio'])
