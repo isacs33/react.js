@@ -9,11 +9,11 @@ function PlayPause(props) {
       {
         props.pause ?
         <button onClick={props.handleClick}>
-          <Play size={25} color="white" viewbox="0 0 32 32" />
+          <Play size={25} color="white" viewBox="0 0 32 32" />
         </button>
         :
         <button onClick={props.handleClick}>
-          <Pause size={25} color="white" viewbox="0 0 32 32" />
+          <Pause size={25} color="white" viewBox="0 0 32 32" />
         </button>
       }
     </div>
