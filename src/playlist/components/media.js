@@ -7,9 +7,9 @@ class Media extends Component {
   //   super(props);
   //   this.handleClick = this.handleClick.bind(this);
   // }
-  // handleClick = (event) => {
-  //   console.log(this.props.title);
-  // }
+  handleClick = (event) => {
+    this.props.openModal(this.props);
+  }
   render() {
     const styles = {
       container: {
@@ -20,7 +20,7 @@ class Media extends Component {
       }
     }
     return (
-      <div className="Media" onClick={this.props.handleClick}>
+      <div className="Media" onClick={this.handleClick}>
         <div className="Media-cover">
           <img
             src={this.props.cover}
